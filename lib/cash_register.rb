@@ -4,11 +4,7 @@ class CashRegister
 
   def initialize(discount = false)
     @total = 0
-    if discount == true
-      apply_discount
-    else
-      puts "There is no discount to apply."
-    end
+    return "There is no discount to apply."
   end
 
   def discount
@@ -22,7 +18,7 @@ class CashRegister
   def apply_discount
     #if @discount == 20
       @total = (@total * (100 - discount) *0.01).to_int
-      return "After the discount, the total comes to $#{@total}."
+      return "After the discount, the total comes to $#{@total}." 
     #else
     #  return "There is no discount to apply."
     #end
