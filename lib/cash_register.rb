@@ -7,7 +7,7 @@ class CashRegister
   end
 
   def discount
-    emp_discount = 20
+    emp_discount = 0.20
   end
 
   def add_item(title, price, quantity = 1)
@@ -15,7 +15,7 @@ class CashRegister
   end
 
   def apply_discount
-    @total *= ((100 - discount)/100)
+    @total = @total * discount
   end
 
 end
