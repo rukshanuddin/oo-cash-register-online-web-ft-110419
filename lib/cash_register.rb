@@ -16,11 +16,11 @@ class CashRegister
     @total += (price * quantity)
     if quantity > 1
       quantity.times do
-    @items << title
-  end
-else
-  @items << title
-end
+        @items << title
+      end
+    else
+      @items << title
+    end
   end
 
   def apply_discount
