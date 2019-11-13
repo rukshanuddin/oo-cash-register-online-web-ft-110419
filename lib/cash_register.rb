@@ -12,7 +12,7 @@ class CashRegister
   end
 
   def discount
-    emp_discount = 20
+    @discount = 20
   end
 
   def add_item(title, price, quantity = 1)
