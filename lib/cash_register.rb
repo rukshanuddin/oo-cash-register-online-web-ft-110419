@@ -23,12 +23,10 @@ class CashRegister
     else
       return "After the discount, the total comes to $#{@total.to_i}."
     end
-    #  @total = (@total * (100 - discount) *0.01).to_int
+  end
 
-    #  return "After the discount, the total comes to $#{@total}."
-    #else
-    #  return "There is no discount to apply."
-    #end
+  def items
+    
   end
 
 end
