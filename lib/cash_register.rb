@@ -7,6 +7,7 @@ class CashRegister
   end
 
   def discount
+    emp_discount = 20
   end
 
 end
