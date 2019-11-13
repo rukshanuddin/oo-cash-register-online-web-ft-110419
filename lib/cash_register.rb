@@ -4,6 +4,11 @@ class CashRegister
 
   def initialize(discount = false)
     @total = 0
+    if discount == false
+      puts "There is no discount to apply."
+    else
+      apply_discount
+    end
   end
 
   def discount
