@@ -18,7 +18,7 @@ class CashRegister
       quantity.times do
     @items << title
   end
-else 
+else
   @items << title
 end
   end
